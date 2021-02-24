@@ -7,4 +7,197 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.navbar {
+  max-width: 1440px;
+  height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #011f3a;
+  font-weight: 400;
+}
+
+.navbar a:hover {
+  background: yellowgreen;
+}
+
+.navbar .underline {
+  text-decoration: underline;
+  position: relative;
+}
+
+.navbar .underline::before {
+  content: "";
+  background-image: url(Images/stars.png);
+  position: absolute;
+  left: -25px;
+  top: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.navbar .logo {
+  padding: 19px 0px 18px 24px;
+}
+
+.navbar nav.nav {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 0px 21px 0px;
+  cursor: pointer;
+}
+
+.navbar .sign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 22px 0px 21px 0px;
+  cursor: pointer;
+}
+
+.navbar .sign a.sign_item {
+  margin-right: 25px;
+}
+
+.header_main {
+  height: 600px;
+  background: #f2ae4d;
+  padding-left: 222px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header_main .header-main__left__h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  max-width: 480px;
+  height: 168px;
+}
+
+.header_main .header-main__left__text {
+  max-width: 277px;
+  height: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #011f3a;
+  padding-top: 33px;
+}
+
+.header_main .header-main__left__btn {
+  width: 228px;
+  height: 56px;
+  border-radius: 44px;
+  background: #3d5675;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  color: whitesmoke;
+  margin-top: 20px;
+}
+
+.header-bottom {
+  height: 200px;
+  background: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header-bottom .header-bottom__items {
+  width: 240px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-bottom .sporify {
+  width: 142px;
+  height: 80px;
+}
+
+.header-bottom .amazon {
+  width: 80px;
+  height: 80px;
+}
+
+.header-bottom .eco-fry {
+  width: 125px;
+  height: 80px;
+}
+
+.header-bottom .header-bottom__text {
+  color: #a1a1a1;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  letter-spacing: 0.6px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
 /*# sourceMappingURL=style.css.map */

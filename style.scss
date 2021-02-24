@@ -5,3 +5,144 @@
 body{
     box-sizing: border-box;
 }
+
+// Variables
+$main-font: 'Roboto', sans-serif;
+$nav-color: rgba(1, 31, 58, 1);
+
+.navbar{
+    max-width: 1440px;
+    height: 61px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: $main-font;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 1);
+ 
+    a{
+        text-decoration: none;
+        color: $nav-color;
+        font-weight: 400;
+    }
+    a:hover{
+        background: yellowgreen;
+    }
+    .underline{
+        text-decoration: underline;
+        position: relative;
+    }
+    .underline::before{
+        content: "";
+        background-image: url(Images/stars.png);
+        position: absolute;
+        left: -25px;
+        top: 0;
+        width: 16px;
+        height: 16px;
+    }
+    .logo{
+        padding: 19px 0px 18px 24px;
+    }
+    nav.nav {
+        width: 48%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 22px 0px 21px 0px;
+        cursor: pointer;
+    }
+    .sign{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 22px 0px 21px 0px;
+        cursor: pointer;
+        a.sign_item {
+            margin-right: 25px;
+        }
+    }
+
+   
+}
+ // header main block
+ .header_main{
+    // width: 100%;
+    height: 600px;
+    background: rgba(242, 174, 77, 1);
+    padding-left: 222px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    .header-main__left__h1{
+    font-family: $main-font;
+    font-size: 48px;
+    line-height: 56px;
+    max-width: 480px;
+    height: 168px;
+    }
+    .header-main__left__text{
+        max-width: 277px;
+        height: 48px;
+        font-family: $main-font;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(1, 31, 58, 1);
+        padding-top: 33px;
+    }
+    .header-main__left__btn{
+        width: 228px;
+        height: 56px;
+        border-radius: 44px;
+        background: rgba(61, 86, 117, 1);
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        font-family: $main-font;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 2px;
+        color: whitesmoke;
+        margin-top: 20px;
+    }
+   
+}
+// bottom header white block
+.header-bottom{
+height: 200px;
+background: whitesmoke;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+.header-bottom__items{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+.sporify{
+    width: 142px;
+    height: 80px;
+}
+.amazon{
+    width: 80px;
+    height: 80px;
+}
+.eco-fry{
+    width: 125px;
+    height: 80px;
+}
+.header-bottom__text{
+    color:rgba(161, 161, 161, 1);
+    font-family: $main-font;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.6px;
+    align-self: center;
+}
+}
