@@ -150,7 +150,6 @@ body {
 }
 
 .header-bottom {
-  height: 200px;
   background: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,6 +161,14 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  height: auto;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 215px;
 }
 
 .header-bottom .header-bottom__items {
@@ -199,5 +206,173 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.goods {
+  max-width: 1440px;
+  background: #eeeeee;
+  margin: 0 auto;
+}
+
+.goods__wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.goods__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0px 50px 0px;
+}
+
+.goods__row__main-text {
+  max-width: 415px;
+  height: 38px;
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  color: #011f3a;
+  line-height: 37px;
+  font-weight: normal;
+}
+
+.goods__btn {
+  width: 247px;
+  height: 44px;
+  border-radius: 44px;
+  background: #3d5675;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.goods__container {
+  max-width: 100%;
+  height: 864.31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.goods__container__items {
+  width: 398px;
+  height: 432px;
+  background: #FFFFFF;
+}
+
+.goods__container__header {
+  font-family: "Roboto", sans-serif;
+  line-height: 21px;
+  font-style: 18px;
+  letter-spacing: 0.36px;
+  color: #011F3A;
+  padding-left: 20px;
+}
+
+.goods__container__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px 20px 4px 20px;
+  color: #777777;
+  font-family: "Roboto", sans-serif;
+  font-style: 15px;
+  line-height: 24px;
+}
+
+.goods__container__bottom__text {
+  width: 220px;
+}
+
+.goods__container__info {
+  width: 420px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0px 50px 0px;
+}
+
+.goods__container__info .bottom__text__goods {
+  color: #a1a1a1;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.goods__container__info .goods__bottom__btn {
+  width: 185px;
+  height: 44px;
+  border-radius: 44px;
+  background: #FFFFFF;
+  border: 1px solid #011F3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #3D5675;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.96px;
 }
 /*# sourceMappingURL=style.css.map */
