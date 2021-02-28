@@ -1,16 +1,19 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     box-sizing: border-box;
 }
 
 // Variables
-$main-font: 'Roboto', sans-serif;
+$main-font: 'Roboto',
+sans-serif;
 $nav-color: rgba(1, 31, 58, 1);
+$btn-background:rgba(61, 86, 117, 1);
 
-.navbar{
+.navbar {
     max-width: 1440px;
     height: 61px;
     display: flex;
@@ -20,20 +23,23 @@ $nav-color: rgba(1, 31, 58, 1);
     margin: 0 auto;
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 1);
- 
-    a{
+
+    a {
         text-decoration: none;
         color: $nav-color;
         font-weight: 400;
     }
-    a:hover{
+
+    a:hover {
         background: yellowgreen;
     }
-    .underline{
+
+    .underline {
         text-decoration: underline;
         position: relative;
     }
-    .underline::before{
+
+    .underline::before {
         content: "";
         background-image: url(Images/stars.png);
         position: absolute;
@@ -42,9 +48,11 @@ $nav-color: rgba(1, 31, 58, 1);
         width: 16px;
         height: 16px;
     }
-    .logo{
+
+    .logo {
         padding: 19px 0px 18px 24px;
     }
+
     nav.nav {
         width: 48%;
         display: flex;
@@ -54,21 +62,24 @@ $nav-color: rgba(1, 31, 58, 1);
         padding: 22px 0px 21px 0px;
         cursor: pointer;
     }
-    .sign{
+
+    .sign {
         display: flex;
         flex-direction: row;
         align-items: center;
         padding: 22px 0px 21px 0px;
         cursor: pointer;
+
         a.sign_item {
             margin-right: 25px;
         }
     }
 
-   
+
 }
- // header main block
- .header_main{
+
+// header main block
+.header_main {
     // width: 100%;
     height: 600px;
     background: rgba(242, 174, 77, 1);
@@ -77,15 +88,16 @@ $nav-color: rgba(1, 31, 58, 1);
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
-    .header-main__left__h1{
-    font-family: $main-font;
-    font-size: 48px;
-    line-height: 56px;
-    max-width: 480px;
-    height: 168px;
+
+    .header-main__left__h1 {
+        font-family: $main-font;
+        font-size: 48px;
+        line-height: 56px;
+        max-width: 480px;
+        height: 168px;
     }
-    .header-main__left__text{
+
+    .header-main__left__text {
         max-width: 277px;
         height: 48px;
         font-family: $main-font;
@@ -95,11 +107,12 @@ $nav-color: rgba(1, 31, 58, 1);
         color: rgba(1, 31, 58, 1);
         padding-top: 33px;
     }
-    .header-main__left__btn{
+
+    .header-main__left__btn {
         width: 228px;
         height: 56px;
         border-radius: 44px;
-        background: rgba(61, 86, 117, 1);
+        background: $btn-background;
         text-transform: uppercase;
         border: none;
         cursor: pointer;
@@ -110,69 +123,79 @@ $nav-color: rgba(1, 31, 58, 1);
         color: whitesmoke;
         margin-top: 20px;
     }
-   
-}
-// bottom header white block
-.header-bottom{
-background: whitesmoke;
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-height: auto;
-max-width: 1200px;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-margin-left: 215px;
 
-.header-bottom__items{
-    width: 240px;
+}
+
+// bottom header white block
+.header-bottom {
+    background: whitesmoke;
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    height: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 215px;
+
+    .header-bottom__items {
+        width: 240px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sporify {
+        width: 142px;
+        height: 80px;
+    }
+
+    .amazon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .eco-fry {
+        width: 125px;
+        height: 80px;
+    }
+
+    .header-bottom__text {
+        color: rgba(161, 161, 161, 1);
+        font-family: $main-font;
+        font-size: 15px;
+        line-height: 19px;
+        letter-spacing: 0.6px;
+        align-self: center;
+    }
 }
-.sporify{
-    width: 142px;
-    height: 80px;
-}
-.amazon{
-    width: 80px;
-    height: 80px;
-}
-.eco-fry{
-    width: 125px;
-    height: 80px;
-}
-.header-bottom__text{
-    color:rgba(161, 161, 161, 1);
-    font-family: $main-font;
-    font-size: 15px;
-    line-height: 19px;
-    letter-spacing: 0.6px;
-    align-self: center;
-}
+
+// all sections
+section {
+    max-width: 1400px;
+    background: rgba(238, 238, 238, 1);
+    margin: 0 auto;
 }
 
 // goods section
-.goods{
-    max-width: 1440px;
-    background: rgba(238, 238, 238, 1);
-    margin: 0 auto;
-
-    &__wrapper{
-        width: 1200px;
+.goods {
+    &__wrapper {
+        max-width: 1200px;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    &__row{
+
+    &__row {
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding: 50px 0px 50px 0px;
     }
-    &__row__main-text{
+
+    &__row__main-text {
         max-width: 415px;
         height: 38px;
         font-family: $main-font;
@@ -181,11 +204,12 @@ margin-left: 215px;
         line-height: 37px;
         font-weight: normal;
     }
-    &__btn{
-        width: 247px;
+
+    &__btn {
+        padding: 0px 20px;
         height: 44px;
         border-radius: 44px;
-        background: rgba(61, 86, 117, 1);
+        background: $btn-background;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -198,19 +222,22 @@ margin-left: 215px;
         text-transform: uppercase;
         color: #FFFFFF;
     }
-    &__container{
+
+    &__container {
         max-width: 100%;
         height: 864.31px;
         display: flex;
         flex-wrap: wrap;
     }
-    &__container__items{
+
+    &__container__items {
         // border: 1px solid black;
         width: 398px;
         height: 432px;
         background: #FFFFFF;
     }
-    &__container__header{
+
+    &__container__header {
         font-family: $main-font;
         line-height: 21px;
         font-style: 18px;
@@ -218,7 +245,8 @@ margin-left: 215px;
         color: #011F3A;
         padding-left: 20px;
     }
-    &__container__bottom{
+
+    &__container__bottom {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -228,11 +256,12 @@ margin-left: 215px;
         font-style: 15px;
         line-height: 24px;
     }
-    &__container__bottom__text{
+
+    &__container__bottom__text {
         width: 220px;
     }
 
-    &__container__info{
+    &__container__info {
         width: 420px;
         margin: 0 auto;
         display: flex;
@@ -250,7 +279,7 @@ margin-left: 215px;
 
         }
 
-        .goods__bottom__btn{
+        .goods__bottom__btn {
             width: 185px;
             height: 44px;
             border-radius: 44px;
@@ -268,6 +297,78 @@ margin-left: 215px;
             line-height: 18px;
             letter-spacing: 1.96px;
         }
+    }
+
+}
+
+// green section
+.green-wrapper {
+    background: rgba(114, 189, 163, 1);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .green__header {
+        font-family: $main-font;
+        text-align: center;
+        font-size: 32px;
+        line-height: 41px;
+        color: $nav-color;
+        padding: 50px 0px 46px 0px;
+    }
+
+    .green__cards {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            &__head {
+                font-family: $main-font;
+                font-size: 18px;
+                line-height: 23px;
+                color: $nav-color;
+                letter-spacing: 0.36px;
+            }
+
+            &__text {
+                font-family: $main-font;
+                color: rgba(61, 86, 117, 1);
+                font-size: 15px;
+                line-height: 24px;
+                padding: 2% 15%;
+                text-align: center;
+            }
+        }
+    }
+    .green__btn{
+        height: 44px;
+        width: 220px;
+        background: $btn-background;
+        text-decoration: none;
+        border-radius: 44px;
+        color: whitesmoke;
+        font-family: $main-font;
+        letter-spacing: 1.96px;
+        text-align: center;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: -2.5%;
+        margin-bottom: 72px;
     }
 
 }
