@@ -350,7 +350,8 @@ section {
             }
         }
     }
-    .green__btn{
+
+    .green__btn {
         height: 44px;
         width: 220px;
         background: $btn-background;
@@ -371,4 +372,140 @@ section {
         margin-bottom: 72px;
     }
 
+}
+
+// next adventures section
+.adventures {
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        padding: 80px 0px 80px 42px;
+        color: $nav-color;
+        font-family: $main-font;
+        font-size: 32px;
+        line-height: 41px;
+        font-weight: 700;
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 42px;
+    }
+
+    &__card {
+        width: 33%;
+        display: flex;
+        align-items: center;
+
+        &__head {
+            color: $nav-color;
+            font-weight: bold;
+            font-size: 18px;
+            font-family: $main-font;
+            line-height: 23px;
+            letter-spacing: 0.36px;
+            padding: 50px 0px 12px;
+        }
+
+        &__text {
+            color: rgba(161, 161, 161, 1);
+            font-family: $main-font;
+            font-size: 15px;
+            line-height: 24px;
+            max-width: 250px;
+            padding-bottom: 140px;
+        }
+
+    }
+
+}
+
+// yellow section
+.yellow__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #FFCA3A;
+
+    .yellow__cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        // padding: 110px 0px 20px 120px;
+    }
+
+    .yellow__cards__item1 {
+        padding: 100px 0px 90px;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        &__header {
+            font-family: $main-font;
+            color: $nav-color;
+            padding: 24px 0px 12px 0px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+        }
+
+        &__text {
+            font-family: $main-font;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            text-align: center;
+            color: #3D5675;
+            width: 350px;
+        }
+    }
+
+    .yellow__btn {
+        width: 204px;
+        height: 44px;
+        border-radius: 44px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        background: rgba(255, 255, 255, 1);
+        font-family: $main-font;
+        color: rgba(61, 86, 117, 1);
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-style: 14px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+
+
+
+    .yellow__cards__item1::after {
+        content: "";
+        left: 100%;
+        // padding: 110px 0px 90px 0px;
+        width: 1px;
+        height: 410px;
+        background: rgba(161, 161, 161, 0.4);
+        position: absolute;
+    }
+
+    .yellow__cards__item2 {
+        padding: 100px 0px 90px;
+        width: 49%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
