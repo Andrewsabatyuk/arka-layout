@@ -641,4 +641,85 @@ section {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.arka_info__header {
+  padding: 100px 100px;
+  text-align: center;
+  font-style: 32px;
+  line-height: 37.5px;
+  font-family: "Roboto", sans-serif;
+  color: #011f3a;
+  font-weight: 700;
+}
+
+.arka_info__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
+          box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 294px;
+}
+
+.arka_info__wrapper__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.arka_info__wrapper .arka_info__wrapper__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0px 20px 106px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.arka_info__wrapper .arka_info__wrapper__item__card {
+  color: #011f3a;
+}
+
+.arka_info__wrapper .arka_info__wrapper__item__text {
+  font-family: "Lato", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #011f3a;
+}
+
+.arka_info__wrapper .arka_info__wrapper__item__btn {
+  width: 160px;
+  height: 44px;
+  border-radius: 44px;
+  background: #f2f2f2;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1.96px;
+  line-height: 18px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #3D5675;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+}
 /*# sourceMappingURL=style.css.map */

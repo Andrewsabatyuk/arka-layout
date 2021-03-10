@@ -12,6 +12,9 @@ $main-font: 'Roboto',
 sans-serif;
 $nav-color: rgba(1, 31, 58, 1);
 $btn-background:rgba(61, 86, 117, 1);
+$reg-font: 'Lato', sans-serif; 
+
+
 
 .navbar {
     max-width: 1440px;
@@ -507,5 +510,72 @@ section {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
+    }
+}
+
+// Merchants love Arka section
+
+.arka_info__header{
+    padding:100px 100px; 
+    text-align: center;
+    font-style: 32px;
+    line-height: 37.5px;
+    font-family: $main-font;
+    color: $nav-color;
+    font-weight: 700;
+}
+
+.arka_info__wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 14px 44px rgba(143, 143, 143, 0.25);
+    display: flex;
+    flex-direction: row;
+    height: 294px;
+    
+    &__img{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .arka_info__wrapper__item{
+        display: flex;
+        // flex-direction: column;
+        padding: 100px 0px 20px 106px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    
+
+        &__card{
+            color: $nav-color;
+        }
+
+
+        &__text{
+            font-family: $reg-font;
+            font-size: 24px;
+            line-height: 32px;
+            color: $nav-color;
+
+        }
+
+
+        &__btn{
+            width: 160px;
+            height: 44px;
+            border-radius: 44px;
+            background: rgba(242, 242, 242, 1);
+            font-family: $main-font;
+            letter-spacing: 1.96px;
+            line-height: 18px;
+            font-size: 14px;
+            text-transform: uppercase;
+            color: #3D5675;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+        }
     }
 }
