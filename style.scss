@@ -533,6 +533,7 @@ section {
     display: flex;
     flex-direction: row;
     height: 294px;
+    padding-bottom: 50px;
     
     &__img{
         display: flex;
@@ -542,13 +543,19 @@ section {
     .arka_info__wrapper__item{
         display: flex;
         // flex-direction: column;
-        padding: 100px 0px 20px 106px;
+        padding: 100px 0px 20px 0px;
         justify-content: space-around;
         flex-wrap: wrap;
+        // max-width: 400px;
     
 
         &__card{
             color: $nav-color;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 400px;
         }
 
 
@@ -557,6 +564,7 @@ section {
             font-size: 24px;
             line-height: 32px;
             color: $nav-color;
+            max-width: 400px;
 
         }
 
@@ -576,6 +584,24 @@ section {
             justify-content: center;
             align-items: center;
             text-decoration: none;
+            border: 1px solid #3D5675;
         }
+        .card__text-name{
+            font-family: $reg-font;
+            line-height: 22px;
+            font-size: 18px;
+            color: #011F3A;
+            font-weight: 400;
+            width: 44px;
+        }
+
+        .card__text-sub{
+            width: 142px;
+            line-height: 24px;
+            font-family: $reg-font;
+            color: #A1A1A1;
+            font-size: 15px;
+        }
+      
     }
 }

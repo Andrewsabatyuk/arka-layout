@@ -666,6 +666,7 @@ section {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 294px;
+  padding-bottom: 50px;
 }
 
 .arka_info__wrapper__img {
@@ -682,7 +683,7 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 100px 0px 20px 106px;
+  padding: 100px 0px 20px 0px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -691,6 +692,19 @@ section {
 
 .arka_info__wrapper .arka_info__wrapper__item__card {
   color: #011f3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 400px;
 }
 
 .arka_info__wrapper .arka_info__wrapper__item__text {
@@ -698,6 +712,7 @@ section {
   font-size: 24px;
   line-height: 32px;
   color: #011f3a;
+  max-width: 400px;
 }
 
 .arka_info__wrapper .arka_info__wrapper__item__btn {
@@ -721,5 +736,23 @@ section {
       -ms-flex-align: center;
           align-items: center;
   text-decoration: none;
+  border: 1px solid #3D5675;
+}
+
+.arka_info__wrapper .arka_info__wrapper__item .card__text-name {
+  font-family: "Lato", sans-serif;
+  line-height: 22px;
+  font-size: 18px;
+  color: #011F3A;
+  font-weight: 400;
+  width: 44px;
+}
+
+.arka_info__wrapper .arka_info__wrapper__item .card__text-sub {
+  width: 142px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+  color: #A1A1A1;
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */
