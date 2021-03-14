@@ -12,7 +12,8 @@ $main-font: 'Roboto',
 sans-serif;
 $nav-color: rgba(1, 31, 58, 1);
 $btn-background:rgba(61, 86, 117, 1);
-$reg-font: 'Lato', sans-serif; 
+$reg-font: 'Lato',
+sans-serif;
 
 
 
@@ -515,8 +516,8 @@ section {
 
 // Merchants love Arka section
 
-.arka_info__header{
-    padding:100px 100px; 
+.arka_info__header {
+    padding: 100px 100px;
     text-align: center;
     font-style: 32px;
     line-height: 37.5px;
@@ -525,7 +526,7 @@ section {
     font-weight: 700;
 }
 
-.arka_info__wrapper{
+.arka_info__wrapper {
     max-width: 1200px;
     margin: 0 auto;
     background: #FFFFFF;
@@ -534,22 +535,22 @@ section {
     flex-direction: row;
     height: 294px;
     padding-bottom: 50px;
-    
-    &__img{
+
+    &__img {
         display: flex;
         flex-direction: row;
     }
 
-    .arka_info__wrapper__item{
+    .arka_info__wrapper__item {
         display: flex;
         // flex-direction: column;
         padding: 100px 0px 20px 0px;
         justify-content: space-around;
         flex-wrap: wrap;
         // max-width: 400px;
-    
 
-        &__card{
+
+        &__card {
             color: $nav-color;
             display: flex;
             flex-direction: row;
@@ -559,7 +560,7 @@ section {
         }
 
 
-        &__text{
+        &__text {
             font-family: $reg-font;
             font-size: 24px;
             line-height: 32px;
@@ -569,7 +570,7 @@ section {
         }
 
 
-        &__btn{
+        &__btn {
             width: 160px;
             height: 44px;
             border-radius: 44px;
@@ -586,7 +587,8 @@ section {
             text-decoration: none;
             border: 1px solid #3D5675;
         }
-        .card__text-name{
+
+        .card__text-name {
             font-family: $reg-font;
             line-height: 22px;
             font-size: 18px;
@@ -595,13 +597,64 @@ section {
             width: 44px;
         }
 
-        .card__text-sub{
+        .card__text-sub {
             width: 142px;
             line-height: 24px;
             font-family: $reg-font;
             color: #A1A1A1;
             font-size: 15px;
         }
-      
+
+    }
+}
+
+
+.last {
+
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        font-family: $main-font;
+        color: $nav-color;
+        font-weight: 700;
+        line-height: 36px;
+        font-size: 31px;
+    }
+    &__btn {
+        height: 44px;
+        width: 220px;
+        background: $btn-background;
+        text-decoration: none;
+        border-radius: 44px;
+        color: whitesmoke;
+        font-family: $main-font;
+        letter-spacing: 1.96px;
+        text-align: center;
+        line-height: 18px;
+        text-transform: uppercase;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: -2.5%;
+        margin-bottom: 72px;
+        font-weight: 700;
+
+    }
+    .white{
+        background: rgba(255, 255, 255, 1);
+        color: rgba(61, 86, 117, 1);
+    }
+
+    &__container{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 500px;
     }
 }
